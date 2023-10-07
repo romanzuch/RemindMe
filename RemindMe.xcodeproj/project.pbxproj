@@ -15,6 +15,14 @@
 		303EAF6F2AD1BD2000689795 /* RemindMeTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 303EAF6E2AD1BD2000689795 /* RemindMeTests.swift */; };
 		303EAF792AD1BD2000689795 /* RemindMeUITests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 303EAF782AD1BD2000689795 /* RemindMeUITests.swift */; };
 		303EAF7B2AD1BD2000689795 /* RemindMeUITestsLaunchTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 303EAF7A2AD1BD2000689795 /* RemindMeUITestsLaunchTests.swift */; };
+		303EAF9B2AD1C17A00689795 /* RemindMe__iOS_App.swift in Sources */ = {isa = PBXBuildFile; fileRef = 303EAF9A2AD1C17A00689795 /* RemindMe__iOS_App.swift */; };
+		303EAF9D2AD1C17A00689795 /* ContentView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 303EAF9C2AD1C17A00689795 /* ContentView.swift */; };
+		303EAF9F2AD1C17A00689795 /* Item.swift in Sources */ = {isa = PBXBuildFile; fileRef = 303EAF9E2AD1C17A00689795 /* Item.swift */; };
+		303EAFA12AD1C17B00689795 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 303EAFA02AD1C17B00689795 /* Assets.xcassets */; };
+		303EAFA42AD1C17B00689795 /* Preview Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 303EAFA32AD1C17B00689795 /* Preview Assets.xcassets */; };
+		303EAFAE2AD1C17B00689795 /* RemindMe__iOS_Tests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 303EAFAD2AD1C17B00689795 /* RemindMe__iOS_Tests.swift */; };
+		303EAFB82AD1C17B00689795 /* RemindMe__iOS_UITests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 303EAFB72AD1C17B00689795 /* RemindMe__iOS_UITests.swift */; };
+		303EAFBA2AD1C17B00689795 /* RemindMe__iOS_UITestsLaunchTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 303EAFB92AD1C17B00689795 /* RemindMe__iOS_UITestsLaunchTests.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -32,6 +40,20 @@
 			remoteGlobalIDString = 303EAF562AD1BD1F00689795;
 			remoteInfo = RemindMe;
 		};
+		303EAFAA2AD1C17B00689795 /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = 303EAF4F2AD1BD1F00689795 /* Project object */;
+			proxyType = 1;
+			remoteGlobalIDString = 303EAF972AD1C17A00689795;
+			remoteInfo = "RemindMe (iOS)";
+		};
+		303EAFB42AD1C17B00689795 /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = 303EAF4F2AD1BD1F00689795 /* Project object */;
+			proxyType = 1;
+			remoteGlobalIDString = 303EAF972AD1C17A00689795;
+			remoteInfo = "RemindMe (iOS)";
+		};
 /* End PBXContainerItemProxy section */
 
 /* Begin PBXFileReference section */
@@ -47,6 +69,17 @@
 		303EAF742AD1BD2000689795 /* RemindMeUITests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = RemindMeUITests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
 		303EAF782AD1BD2000689795 /* RemindMeUITests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = RemindMeUITests.swift; sourceTree = "<group>"; };
 		303EAF7A2AD1BD2000689795 /* RemindMeUITestsLaunchTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = RemindMeUITestsLaunchTests.swift; sourceTree = "<group>"; };
+		303EAF982AD1C17A00689795 /* RemindMe (iOS).app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = "RemindMe (iOS).app"; sourceTree = BUILT_PRODUCTS_DIR; };
+		303EAF9A2AD1C17A00689795 /* RemindMe__iOS_App.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = RemindMe__iOS_App.swift; sourceTree = "<group>"; };
+		303EAF9C2AD1C17A00689795 /* ContentView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ContentView.swift; sourceTree = "<group>"; };
+		303EAF9E2AD1C17A00689795 /* Item.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Item.swift; sourceTree = "<group>"; };
+		303EAFA02AD1C17B00689795 /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
+		303EAFA32AD1C17B00689795 /* Preview Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = "Preview Assets.xcassets"; sourceTree = "<group>"; };
+		303EAFA92AD1C17B00689795 /* RemindMe (iOS)Tests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = "RemindMe (iOS)Tests.xctest"; sourceTree = BUILT_PRODUCTS_DIR; };
+		303EAFAD2AD1C17B00689795 /* RemindMe__iOS_Tests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = RemindMe__iOS_Tests.swift; sourceTree = "<group>"; };
+		303EAFB32AD1C17B00689795 /* RemindMe (iOS)UITests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = "RemindMe (iOS)UITests.xctest"; sourceTree = BUILT_PRODUCTS_DIR; };
+		303EAFB72AD1C17B00689795 /* RemindMe__iOS_UITests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = RemindMe__iOS_UITests.swift; sourceTree = "<group>"; };
+		303EAFB92AD1C17B00689795 /* RemindMe__iOS_UITestsLaunchTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = RemindMe__iOS_UITestsLaunchTests.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -71,6 +104,27 @@
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
+		303EAF952AD1C17A00689795 /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		303EAFA62AD1C17B00689795 /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		303EAFB02AD1C17B00689795 /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
 /* End PBXFrameworksBuildPhase section */
 
 /* Begin PBXGroup section */
@@ -80,6 +134,9 @@
 				303EAF592AD1BD1F00689795 /* RemindMe */,
 				303EAF6D2AD1BD2000689795 /* RemindMeTests */,
 				303EAF772AD1BD2000689795 /* RemindMeUITests */,
+				303EAF992AD1C17A00689795 /* RemindMe (iOS) */,
+				303EAFAC2AD1C17B00689795 /* RemindMe (iOS)Tests */,
+				303EAFB62AD1C17B00689795 /* RemindMe (iOS)UITests */,
 				303EAF582AD1BD1F00689795 /* Products */,
 			);
 			sourceTree = "<group>";
@@ -90,6 +147,9 @@
 				303EAF572AD1BD1F00689795 /* RemindMe.app */,
 				303EAF6A2AD1BD2000689795 /* RemindMeTests.xctest */,
 				303EAF742AD1BD2000689795 /* RemindMeUITests.xctest */,
+				303EAF982AD1C17A00689795 /* RemindMe (iOS).app */,
+				303EAFA92AD1C17B00689795 /* RemindMe (iOS)Tests.xctest */,
+				303EAFB32AD1C17B00689795 /* RemindMe (iOS)UITests.xctest */,
 			);
 			name = Products;
 			sourceTree = "<group>";
@@ -97,6 +157,8 @@
 		303EAF592AD1BD1F00689795 /* RemindMe */ = {
 			isa = PBXGroup;
 			children = (
+				303EAF882AD1BD2900689795 /* macOS */,
+				303EAF872AD1BD2400689795 /* iOS */,
 				303EAF5A2AD1BD1F00689795 /* RemindMeApp.swift */,
 				303EAF5C2AD1BD1F00689795 /* ContentView.swift */,
 				303EAF5E2AD1BD1F00689795 /* Item.swift */,
@@ -130,6 +192,121 @@
 				303EAF7A2AD1BD2000689795 /* RemindMeUITestsLaunchTests.swift */,
 			);
 			path = RemindMeUITests;
+			sourceTree = "<group>";
+		};
+		303EAF872AD1BD2400689795 /* iOS */ = {
+			isa = PBXGroup;
+			children = (
+				303EAF902AD1C05800689795 /* Models */,
+				303EAF8E2AD1C05100689795 /* Services */,
+				303EAF8C2AD1C04900689795 /* Controllers */,
+				303EAF8A2AD1C04000689795 /* Views */,
+			);
+			path = iOS;
+			sourceTree = "<group>";
+		};
+		303EAF882AD1BD2900689795 /* macOS */ = {
+			isa = PBXGroup;
+			children = (
+				303EAF8F2AD1C05400689795 /* Models */,
+				303EAF8D2AD1C04D00689795 /* Services */,
+				303EAF8B2AD1C04300689795 /* Controllers */,
+				303EAF892AD1C03C00689795 /* Views */,
+			);
+			path = macOS;
+			sourceTree = "<group>";
+		};
+		303EAF892AD1C03C00689795 /* Views */ = {
+			isa = PBXGroup;
+			children = (
+			);
+			path = Views;
+			sourceTree = "<group>";
+		};
+		303EAF8A2AD1C04000689795 /* Views */ = {
+			isa = PBXGroup;
+			children = (
+			);
+			path = Views;
+			sourceTree = "<group>";
+		};
+		303EAF8B2AD1C04300689795 /* Controllers */ = {
+			isa = PBXGroup;
+			children = (
+			);
+			path = Controllers;
+			sourceTree = "<group>";
+		};
+		303EAF8C2AD1C04900689795 /* Controllers */ = {
+			isa = PBXGroup;
+			children = (
+			);
+			path = Controllers;
+			sourceTree = "<group>";
+		};
+		303EAF8D2AD1C04D00689795 /* Services */ = {
+			isa = PBXGroup;
+			children = (
+			);
+			path = Services;
+			sourceTree = "<group>";
+		};
+		303EAF8E2AD1C05100689795 /* Services */ = {
+			isa = PBXGroup;
+			children = (
+			);
+			path = Services;
+			sourceTree = "<group>";
+		};
+		303EAF8F2AD1C05400689795 /* Models */ = {
+			isa = PBXGroup;
+			children = (
+			);
+			path = Models;
+			sourceTree = "<group>";
+		};
+		303EAF902AD1C05800689795 /* Models */ = {
+			isa = PBXGroup;
+			children = (
+			);
+			path = Models;
+			sourceTree = "<group>";
+		};
+		303EAF992AD1C17A00689795 /* RemindMe (iOS) */ = {
+			isa = PBXGroup;
+			children = (
+				303EAF9A2AD1C17A00689795 /* RemindMe__iOS_App.swift */,
+				303EAF9C2AD1C17A00689795 /* ContentView.swift */,
+				303EAF9E2AD1C17A00689795 /* Item.swift */,
+				303EAFA02AD1C17B00689795 /* Assets.xcassets */,
+				303EAFA22AD1C17B00689795 /* Preview Content */,
+			);
+			path = "RemindMe (iOS)";
+			sourceTree = "<group>";
+		};
+		303EAFA22AD1C17B00689795 /* Preview Content */ = {
+			isa = PBXGroup;
+			children = (
+				303EAFA32AD1C17B00689795 /* Preview Assets.xcassets */,
+			);
+			path = "Preview Content";
+			sourceTree = "<group>";
+		};
+		303EAFAC2AD1C17B00689795 /* RemindMe (iOS)Tests */ = {
+			isa = PBXGroup;
+			children = (
+				303EAFAD2AD1C17B00689795 /* RemindMe__iOS_Tests.swift */,
+			);
+			path = "RemindMe (iOS)Tests";
+			sourceTree = "<group>";
+		};
+		303EAFB62AD1C17B00689795 /* RemindMe (iOS)UITests */ = {
+			isa = PBXGroup;
+			children = (
+				303EAFB72AD1C17B00689795 /* RemindMe__iOS_UITests.swift */,
+				303EAFB92AD1C17B00689795 /* RemindMe__iOS_UITestsLaunchTests.swift */,
+			);
+			path = "RemindMe (iOS)UITests";
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -188,6 +365,59 @@
 			productReference = 303EAF742AD1BD2000689795 /* RemindMeUITests.xctest */;
 			productType = "com.apple.product-type.bundle.ui-testing";
 		};
+		303EAF972AD1C17A00689795 /* RemindMe (iOS) */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = 303EAFBB2AD1C17B00689795 /* Build configuration list for PBXNativeTarget "RemindMe (iOS)" */;
+			buildPhases = (
+				303EAF942AD1C17A00689795 /* Sources */,
+				303EAF952AD1C17A00689795 /* Frameworks */,
+				303EAF962AD1C17A00689795 /* Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+			);
+			name = "RemindMe (iOS)";
+			productName = "RemindMe (iOS)";
+			productReference = 303EAF982AD1C17A00689795 /* RemindMe (iOS).app */;
+			productType = "com.apple.product-type.application";
+		};
+		303EAFA82AD1C17B00689795 /* RemindMe (iOS)Tests */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = 303EAFBE2AD1C17B00689795 /* Build configuration list for PBXNativeTarget "RemindMe (iOS)Tests" */;
+			buildPhases = (
+				303EAFA52AD1C17B00689795 /* Sources */,
+				303EAFA62AD1C17B00689795 /* Frameworks */,
+				303EAFA72AD1C17B00689795 /* Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+				303EAFAB2AD1C17B00689795 /* PBXTargetDependency */,
+			);
+			name = "RemindMe (iOS)Tests";
+			productName = "RemindMe (iOS)Tests";
+			productReference = 303EAFA92AD1C17B00689795 /* RemindMe (iOS)Tests.xctest */;
+			productType = "com.apple.product-type.bundle.unit-test";
+		};
+		303EAFB22AD1C17B00689795 /* RemindMe (iOS)UITests */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = 303EAFC12AD1C17B00689795 /* Build configuration list for PBXNativeTarget "RemindMe (iOS)UITests" */;
+			buildPhases = (
+				303EAFAF2AD1C17B00689795 /* Sources */,
+				303EAFB02AD1C17B00689795 /* Frameworks */,
+				303EAFB12AD1C17B00689795 /* Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+				303EAFB52AD1C17B00689795 /* PBXTargetDependency */,
+			);
+			name = "RemindMe (iOS)UITests";
+			productName = "RemindMe (iOS)UITests";
+			productReference = 303EAFB32AD1C17B00689795 /* RemindMe (iOS)UITests.xctest */;
+			productType = "com.apple.product-type.bundle.ui-testing";
+		};
 /* End PBXNativeTarget section */
 
 /* Begin PBXProject section */
@@ -209,6 +439,17 @@
 						CreatedOnToolsVersion = 15.0;
 						TestTargetID = 303EAF562AD1BD1F00689795;
 					};
+					303EAF972AD1C17A00689795 = {
+						CreatedOnToolsVersion = 15.0;
+					};
+					303EAFA82AD1C17B00689795 = {
+						CreatedOnToolsVersion = 15.0;
+						TestTargetID = 303EAF972AD1C17A00689795;
+					};
+					303EAFB22AD1C17B00689795 = {
+						CreatedOnToolsVersion = 15.0;
+						TestTargetID = 303EAF972AD1C17A00689795;
+					};
 				};
 			};
 			buildConfigurationList = 303EAF522AD1BD1F00689795 /* Build configuration list for PBXProject "RemindMe" */;
@@ -227,6 +468,9 @@
 				303EAF562AD1BD1F00689795 /* RemindMe */,
 				303EAF692AD1BD2000689795 /* RemindMeTests */,
 				303EAF732AD1BD2000689795 /* RemindMeUITests */,
+				303EAF972AD1C17A00689795 /* RemindMe (iOS) */,
+				303EAFA82AD1C17B00689795 /* RemindMe (iOS)Tests */,
+				303EAFB22AD1C17B00689795 /* RemindMe (iOS)UITests */,
 			);
 		};
 /* End PBXProject section */
@@ -249,6 +493,29 @@
 			runOnlyForDeploymentPostprocessing = 0;
 		};
 		303EAF722AD1BD2000689795 /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		303EAF962AD1C17A00689795 /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				303EAFA42AD1C17B00689795 /* Preview Assets.xcassets in Resources */,
+				303EAFA12AD1C17B00689795 /* Assets.xcassets in Resources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		303EAFA72AD1C17B00689795 /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		303EAFB12AD1C17B00689795 /* Resources */ = {
 			isa = PBXResourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
@@ -285,6 +552,33 @@
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
+		303EAF942AD1C17A00689795 /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				303EAF9D2AD1C17A00689795 /* ContentView.swift in Sources */,
+				303EAF9F2AD1C17A00689795 /* Item.swift in Sources */,
+				303EAF9B2AD1C17A00689795 /* RemindMe__iOS_App.swift in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		303EAFA52AD1C17B00689795 /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				303EAFAE2AD1C17B00689795 /* RemindMe__iOS_Tests.swift in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		303EAFAF2AD1C17B00689795 /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				303EAFB82AD1C17B00689795 /* RemindMe__iOS_UITests.swift in Sources */,
+				303EAFBA2AD1C17B00689795 /* RemindMe__iOS_UITestsLaunchTests.swift in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
 /* End PBXSourcesBuildPhase section */
 
 /* Begin PBXTargetDependency section */
@@ -297,6 +591,16 @@
 			isa = PBXTargetDependency;
 			target = 303EAF562AD1BD1F00689795 /* RemindMe */;
 			targetProxy = 303EAF752AD1BD2000689795 /* PBXContainerItemProxy */;
+		};
+		303EAFAB2AD1C17B00689795 /* PBXTargetDependency */ = {
+			isa = PBXTargetDependency;
+			target = 303EAF972AD1C17A00689795 /* RemindMe (iOS) */;
+			targetProxy = 303EAFAA2AD1C17B00689795 /* PBXContainerItemProxy */;
+		};
+		303EAFB52AD1C17B00689795 /* PBXTargetDependency */ = {
+			isa = PBXTargetDependency;
+			target = 303EAF972AD1C17A00689795 /* RemindMe (iOS) */;
+			targetProxy = 303EAFB42AD1C17B00689795 /* PBXContainerItemProxy */;
 		};
 /* End PBXTargetDependency section */
 
@@ -428,6 +732,8 @@
 				ENABLE_HARDENED_RUNTIME = YES;
 				ENABLE_PREVIEWS = YES;
 				GENERATE_INFOPLIST_FILE = YES;
+				INFOPLIST_KEY_CFBundleDisplayName = RemindMe;
+				INFOPLIST_KEY_LSApplicationCategoryType = "public.app-category.productivity";
 				"INFOPLIST_KEY_UIApplicationSceneManifest_Generation[sdk=iphoneos*]" = YES;
 				"INFOPLIST_KEY_UIApplicationSceneManifest_Generation[sdk=iphonesimulator*]" = YES;
 				"INFOPLIST_KEY_UIApplicationSupportsIndirectInputEvents[sdk=iphoneos*]" = YES;
@@ -436,20 +742,20 @@
 				"INFOPLIST_KEY_UILaunchScreen_Generation[sdk=iphonesimulator*]" = YES;
 				"INFOPLIST_KEY_UIStatusBarStyle[sdk=iphoneos*]" = UIStatusBarStyleDefault;
 				"INFOPLIST_KEY_UIStatusBarStyle[sdk=iphonesimulator*]" = UIStatusBarStyleDefault;
-				INFOPLIST_KEY_UISupportedInterfaceOrientations_iPad = "UIInterfaceOrientationPortrait UIInterfaceOrientationPortraitUpsideDown UIInterfaceOrientationLandscapeLeft UIInterfaceOrientationLandscapeRight";
-				INFOPLIST_KEY_UISupportedInterfaceOrientations_iPhone = "UIInterfaceOrientationPortrait UIInterfaceOrientationLandscapeLeft UIInterfaceOrientationLandscapeRight";
+				INFOPLIST_KEY_UISupportedInterfaceOrientations = UIInterfaceOrientationPortrait;
+				INFOPLIST_KEY_UISupportedInterfaceOrientations_iPad = "UIInterfaceOrientationLandscapeLeft UIInterfaceOrientationLandscapeRight UIInterfaceOrientationPortrait";
 				IPHONEOS_DEPLOYMENT_TARGET = 17.0;
 				LD_RUNPATH_SEARCH_PATHS = "@executable_path/Frameworks";
 				"LD_RUNPATH_SEARCH_PATHS[sdk=macosx*]" = "@executable_path/../Frameworks";
 				MACOSX_DEPLOYMENT_TARGET = 14.0;
 				MARKETING_VERSION = 1.0;
-				PRODUCT_BUNDLE_IDENTIFIER = craftcode.RemindMe;
+				PRODUCT_BUNDLE_IDENTIFIER = craftcode.remindme;
 				PRODUCT_NAME = "$(TARGET_NAME)";
 				SDKROOT = auto;
-				SUPPORTED_PLATFORMS = "iphoneos iphonesimulator macosx";
+				SUPPORTED_PLATFORMS = macosx;
+				SUPPORTS_MACCATALYST = NO;
 				SWIFT_EMIT_LOC_STRINGS = YES;
 				SWIFT_VERSION = 5.0;
-				TARGETED_DEVICE_FAMILY = "1,2";
 			};
 			name = Debug;
 		};
@@ -466,6 +772,8 @@
 				ENABLE_HARDENED_RUNTIME = YES;
 				ENABLE_PREVIEWS = YES;
 				GENERATE_INFOPLIST_FILE = YES;
+				INFOPLIST_KEY_CFBundleDisplayName = RemindMe;
+				INFOPLIST_KEY_LSApplicationCategoryType = "public.app-category.productivity";
 				"INFOPLIST_KEY_UIApplicationSceneManifest_Generation[sdk=iphoneos*]" = YES;
 				"INFOPLIST_KEY_UIApplicationSceneManifest_Generation[sdk=iphonesimulator*]" = YES;
 				"INFOPLIST_KEY_UIApplicationSupportsIndirectInputEvents[sdk=iphoneos*]" = YES;
@@ -474,20 +782,20 @@
 				"INFOPLIST_KEY_UILaunchScreen_Generation[sdk=iphonesimulator*]" = YES;
 				"INFOPLIST_KEY_UIStatusBarStyle[sdk=iphoneos*]" = UIStatusBarStyleDefault;
 				"INFOPLIST_KEY_UIStatusBarStyle[sdk=iphonesimulator*]" = UIStatusBarStyleDefault;
-				INFOPLIST_KEY_UISupportedInterfaceOrientations_iPad = "UIInterfaceOrientationPortrait UIInterfaceOrientationPortraitUpsideDown UIInterfaceOrientationLandscapeLeft UIInterfaceOrientationLandscapeRight";
-				INFOPLIST_KEY_UISupportedInterfaceOrientations_iPhone = "UIInterfaceOrientationPortrait UIInterfaceOrientationLandscapeLeft UIInterfaceOrientationLandscapeRight";
+				INFOPLIST_KEY_UISupportedInterfaceOrientations = UIInterfaceOrientationPortrait;
+				INFOPLIST_KEY_UISupportedInterfaceOrientations_iPad = "UIInterfaceOrientationLandscapeLeft UIInterfaceOrientationLandscapeRight UIInterfaceOrientationPortrait";
 				IPHONEOS_DEPLOYMENT_TARGET = 17.0;
 				LD_RUNPATH_SEARCH_PATHS = "@executable_path/Frameworks";
 				"LD_RUNPATH_SEARCH_PATHS[sdk=macosx*]" = "@executable_path/../Frameworks";
 				MACOSX_DEPLOYMENT_TARGET = 14.0;
 				MARKETING_VERSION = 1.0;
-				PRODUCT_BUNDLE_IDENTIFIER = craftcode.RemindMe;
+				PRODUCT_BUNDLE_IDENTIFIER = craftcode.remindme;
 				PRODUCT_NAME = "$(TARGET_NAME)";
 				SDKROOT = auto;
-				SUPPORTED_PLATFORMS = "iphoneos iphonesimulator macosx";
+				SUPPORTED_PLATFORMS = macosx;
+				SUPPORTS_MACCATALYST = NO;
 				SWIFT_EMIT_LOC_STRINGS = YES;
 				SWIFT_VERSION = 5.0;
-				TARGETED_DEVICE_FAMILY = "1,2";
 			};
 			name = Release;
 		};
@@ -581,6 +889,163 @@
 			};
 			name = Release;
 		};
+		303EAFBC2AD1C17B00689795 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				ASSETCATALOG_COMPILER_GLOBAL_ACCENT_COLOR_NAME = AccentColor;
+				CODE_SIGN_STYLE = Automatic;
+				CURRENT_PROJECT_VERSION = 1;
+				DEVELOPMENT_ASSET_PATHS = "\"RemindMe (iOS)/Preview Content\"";
+				DEVELOPMENT_TEAM = HS8PVR3BLT;
+				ENABLE_PREVIEWS = YES;
+				GENERATE_INFOPLIST_FILE = YES;
+				INFOPLIST_KEY_CFBundleDisplayName = RemindMe;
+				INFOPLIST_KEY_LSApplicationCategoryType = "public.app-category.productivity";
+				INFOPLIST_KEY_UIApplicationSceneManifest_Generation = YES;
+				INFOPLIST_KEY_UIApplicationSupportsIndirectInputEvents = YES;
+				INFOPLIST_KEY_UILaunchScreen_Generation = YES;
+				INFOPLIST_KEY_UISupportedInterfaceOrientations_iPad = "UIInterfaceOrientationPortrait UIInterfaceOrientationPortraitUpsideDown UIInterfaceOrientationLandscapeLeft UIInterfaceOrientationLandscapeRight";
+				INFOPLIST_KEY_UISupportedInterfaceOrientations_iPhone = "UIInterfaceOrientationPortrait UIInterfaceOrientationLandscapeLeft UIInterfaceOrientationLandscapeRight";
+				IPHONEOS_DEPLOYMENT_TARGET = 17.0;
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+				);
+				MARKETING_VERSION = 1.0;
+				PRODUCT_BUNDLE_IDENTIFIER = craftcode.remindme;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SDKROOT = iphoneos;
+				SUPPORTED_PLATFORMS = "iphoneos iphonesimulator";
+				SUPPORTS_MACCATALYST = NO;
+				SUPPORTS_MAC_DESIGNED_FOR_IPHONE_IPAD = NO;
+				SWIFT_EMIT_LOC_STRINGS = YES;
+				SWIFT_VERSION = 5.0;
+				TARGETED_DEVICE_FAMILY = 1;
+			};
+			name = Debug;
+		};
+		303EAFBD2AD1C17B00689795 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				ASSETCATALOG_COMPILER_GLOBAL_ACCENT_COLOR_NAME = AccentColor;
+				CODE_SIGN_STYLE = Automatic;
+				CURRENT_PROJECT_VERSION = 1;
+				DEVELOPMENT_ASSET_PATHS = "\"RemindMe (iOS)/Preview Content\"";
+				DEVELOPMENT_TEAM = HS8PVR3BLT;
+				ENABLE_PREVIEWS = YES;
+				GENERATE_INFOPLIST_FILE = YES;
+				INFOPLIST_KEY_CFBundleDisplayName = RemindMe;
+				INFOPLIST_KEY_LSApplicationCategoryType = "public.app-category.productivity";
+				INFOPLIST_KEY_UIApplicationSceneManifest_Generation = YES;
+				INFOPLIST_KEY_UIApplicationSupportsIndirectInputEvents = YES;
+				INFOPLIST_KEY_UILaunchScreen_Generation = YES;
+				INFOPLIST_KEY_UISupportedInterfaceOrientations_iPad = "UIInterfaceOrientationPortrait UIInterfaceOrientationPortraitUpsideDown UIInterfaceOrientationLandscapeLeft UIInterfaceOrientationLandscapeRight";
+				INFOPLIST_KEY_UISupportedInterfaceOrientations_iPhone = "UIInterfaceOrientationPortrait UIInterfaceOrientationLandscapeLeft UIInterfaceOrientationLandscapeRight";
+				IPHONEOS_DEPLOYMENT_TARGET = 17.0;
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+				);
+				MARKETING_VERSION = 1.0;
+				PRODUCT_BUNDLE_IDENTIFIER = craftcode.remindme;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SDKROOT = iphoneos;
+				SUPPORTED_PLATFORMS = "iphoneos iphonesimulator";
+				SUPPORTS_MACCATALYST = NO;
+				SUPPORTS_MAC_DESIGNED_FOR_IPHONE_IPAD = NO;
+				SWIFT_EMIT_LOC_STRINGS = YES;
+				SWIFT_VERSION = 5.0;
+				TARGETED_DEVICE_FAMILY = 1;
+				VALIDATE_PRODUCT = YES;
+			};
+			name = Release;
+		};
+		303EAFBF2AD1C17B00689795 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
+				BUNDLE_LOADER = "$(TEST_HOST)";
+				CODE_SIGN_STYLE = Automatic;
+				CURRENT_PROJECT_VERSION = 1;
+				DEVELOPMENT_TEAM = HS8PVR3BLT;
+				GENERATE_INFOPLIST_FILE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 17.0;
+				MARKETING_VERSION = 1.0;
+				PRODUCT_BUNDLE_IDENTIFIER = "craftcode.RemindMe--iOS-Tests";
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SDKROOT = iphoneos;
+				SWIFT_EMIT_LOC_STRINGS = NO;
+				SWIFT_VERSION = 5.0;
+				TARGETED_DEVICE_FAMILY = "1,2";
+				TEST_HOST = "$(BUILT_PRODUCTS_DIR)/RemindMe (iOS).app/$(BUNDLE_EXECUTABLE_FOLDER_PATH)/RemindMe (iOS)";
+			};
+			name = Debug;
+		};
+		303EAFC02AD1C17B00689795 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
+				BUNDLE_LOADER = "$(TEST_HOST)";
+				CODE_SIGN_STYLE = Automatic;
+				CURRENT_PROJECT_VERSION = 1;
+				DEVELOPMENT_TEAM = HS8PVR3BLT;
+				GENERATE_INFOPLIST_FILE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 17.0;
+				MARKETING_VERSION = 1.0;
+				PRODUCT_BUNDLE_IDENTIFIER = "craftcode.RemindMe--iOS-Tests";
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SDKROOT = iphoneos;
+				SWIFT_EMIT_LOC_STRINGS = NO;
+				SWIFT_VERSION = 5.0;
+				TARGETED_DEVICE_FAMILY = "1,2";
+				TEST_HOST = "$(BUILT_PRODUCTS_DIR)/RemindMe (iOS).app/$(BUNDLE_EXECUTABLE_FOLDER_PATH)/RemindMe (iOS)";
+				VALIDATE_PRODUCT = YES;
+			};
+			name = Release;
+		};
+		303EAFC22AD1C17B00689795 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
+				CODE_SIGN_STYLE = Automatic;
+				CURRENT_PROJECT_VERSION = 1;
+				DEVELOPMENT_TEAM = HS8PVR3BLT;
+				GENERATE_INFOPLIST_FILE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 17.0;
+				MARKETING_VERSION = 1.0;
+				PRODUCT_BUNDLE_IDENTIFIER = "craftcode.RemindMe--iOS-UITests";
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SDKROOT = iphoneos;
+				SWIFT_EMIT_LOC_STRINGS = NO;
+				SWIFT_VERSION = 5.0;
+				TARGETED_DEVICE_FAMILY = "1,2";
+				TEST_TARGET_NAME = "RemindMe (iOS)";
+			};
+			name = Debug;
+		};
+		303EAFC32AD1C17B00689795 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
+				CODE_SIGN_STYLE = Automatic;
+				CURRENT_PROJECT_VERSION = 1;
+				DEVELOPMENT_TEAM = HS8PVR3BLT;
+				GENERATE_INFOPLIST_FILE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 17.0;
+				MARKETING_VERSION = 1.0;
+				PRODUCT_BUNDLE_IDENTIFIER = "craftcode.RemindMe--iOS-UITests";
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SDKROOT = iphoneos;
+				SWIFT_EMIT_LOC_STRINGS = NO;
+				SWIFT_VERSION = 5.0;
+				TARGETED_DEVICE_FAMILY = "1,2";
+				TEST_TARGET_NAME = "RemindMe (iOS)";
+				VALIDATE_PRODUCT = YES;
+			};
+			name = Release;
+		};
 /* End XCBuildConfiguration section */
 
 /* Begin XCConfigurationList section */
@@ -616,6 +1081,33 @@
 			buildConfigurations = (
 				303EAF852AD1BD2000689795 /* Debug */,
 				303EAF862AD1BD2000689795 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		303EAFBB2AD1C17B00689795 /* Build configuration list for PBXNativeTarget "RemindMe (iOS)" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				303EAFBC2AD1C17B00689795 /* Debug */,
+				303EAFBD2AD1C17B00689795 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		303EAFBE2AD1C17B00689795 /* Build configuration list for PBXNativeTarget "RemindMe (iOS)Tests" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				303EAFBF2AD1C17B00689795 /* Debug */,
+				303EAFC02AD1C17B00689795 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		303EAFC12AD1C17B00689795 /* Build configuration list for PBXNativeTarget "RemindMe (iOS)UITests" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				303EAFC22AD1C17B00689795 /* Debug */,
+				303EAFC32AD1C17B00689795 /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
 			defaultConfigurationName = Release;
