@@ -30,6 +30,16 @@ final class RemindMeItem {
         self.itemReminder = itemReminder
         self.itemTag = itemTag
     }
+    
+    static func getExampleData() -> [RemindMeItem] {
+        let exampleData = [
+            RemindMeItem(itemTitle: "Titel"),
+            RemindMeItem(itemTitle: "Heute", itemDateDue: Date(timeIntervalSinceNow: 10.0)),
+            RemindMeItem(itemTitle: "Datum", itemDateDue: Date(timeIntervalSinceNow: 2000.0)),
+            RemindMeItem(itemTitle: "Tag", itemTag: RemindMeItemTag(title: "Test", color: .blue))
+        ]
+        return exampleData
+    }
 }
 
 @Model
@@ -51,10 +61,17 @@ enum ItemPriority: String, Codable {
 @Model
 final class RemindMeItemTag {
     var title: String
-    var color: String
+    var color: ItemTagColor
     
-    init(title: String, color: String) {
+    init(title: String, color: ItemTagColor) {
         self.title = title
         self.color = color
     }
+}
+
+enum ItemTagColor: Codable {
+    case red
+    case blue
+    case yellow
+    case green
 }
