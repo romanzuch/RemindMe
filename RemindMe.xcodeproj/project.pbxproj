@@ -23,6 +23,8 @@
 		303EAFAE2AD1C17B00689795 /* RemindMe__iOS_Tests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 303EAFAD2AD1C17B00689795 /* RemindMe__iOS_Tests.swift */; };
 		303EAFB82AD1C17B00689795 /* RemindMe__iOS_UITests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 303EAFB72AD1C17B00689795 /* RemindMe__iOS_UITests.swift */; };
 		303EAFBA2AD1C17B00689795 /* RemindMe__iOS_UITestsLaunchTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 303EAFB92AD1C17B00689795 /* RemindMe__iOS_UITestsLaunchTests.swift */; };
+		303EAFCC2AD1C32C00689795 /* RemindMeItem.swift in Sources */ = {isa = PBXBuildFile; fileRef = 303EAFCB2AD1C32C00689795 /* RemindMeItem.swift */; };
+		303EAFCD2AD1C32C00689795 /* RemindMeItem.swift in Sources */ = {isa = PBXBuildFile; fileRef = 303EAFCB2AD1C32C00689795 /* RemindMeItem.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -80,6 +82,7 @@
 		303EAFB32AD1C17B00689795 /* RemindMe (iOS)UITests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = "RemindMe (iOS)UITests.xctest"; sourceTree = BUILT_PRODUCTS_DIR; };
 		303EAFB72AD1C17B00689795 /* RemindMe__iOS_UITests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = RemindMe__iOS_UITests.swift; sourceTree = "<group>"; };
 		303EAFB92AD1C17B00689795 /* RemindMe__iOS_UITestsLaunchTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = RemindMe__iOS_UITestsLaunchTests.swift; sourceTree = "<group>"; };
+		303EAFCB2AD1C32C00689795 /* RemindMeItem.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = RemindMeItem.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -157,6 +160,7 @@
 		303EAF592AD1BD1F00689795 /* RemindMe */ = {
 			isa = PBXGroup;
 			children = (
+				303EAFC92AD1C31A00689795 /* Shared */,
 				303EAF882AD1BD2900689795 /* macOS */,
 				303EAF872AD1BD2400689795 /* iOS */,
 				303EAF5A2AD1BD1F00689795 /* RemindMeApp.swift */,
@@ -307,6 +311,22 @@
 				303EAFB92AD1C17B00689795 /* RemindMe__iOS_UITestsLaunchTests.swift */,
 			);
 			path = "RemindMe (iOS)UITests";
+			sourceTree = "<group>";
+		};
+		303EAFC92AD1C31A00689795 /* Shared */ = {
+			isa = PBXGroup;
+			children = (
+				303EAFCA2AD1C31E00689795 /* Models */,
+			);
+			path = Shared;
+			sourceTree = "<group>";
+		};
+		303EAFCA2AD1C31E00689795 /* Models */ = {
+			isa = PBXGroup;
+			children = (
+				303EAFCB2AD1C32C00689795 /* RemindMeItem.swift */,
+			);
+			path = Models;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -530,6 +550,7 @@
 			buildActionMask = 2147483647;
 			files = (
 				303EAF5D2AD1BD1F00689795 /* ContentView.swift in Sources */,
+				303EAFCC2AD1C32C00689795 /* RemindMeItem.swift in Sources */,
 				303EAF5F2AD1BD1F00689795 /* Item.swift in Sources */,
 				303EAF5B2AD1BD1F00689795 /* RemindMeApp.swift in Sources */,
 			);
@@ -557,6 +578,7 @@
 			buildActionMask = 2147483647;
 			files = (
 				303EAF9D2AD1C17A00689795 /* ContentView.swift in Sources */,
+				303EAFCD2AD1C32C00689795 /* RemindMeItem.swift in Sources */,
 				303EAF9F2AD1C17A00689795 /* Item.swift in Sources */,
 				303EAF9B2AD1C17A00689795 /* RemindMe__iOS_App.swift in Sources */,
 			);
