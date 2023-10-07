@@ -8,11 +8,39 @@
 import SwiftUI
 
 struct SectionView: View {
+    
+    var items: [RemindMeItem]
+    
+    init(items: [RemindMeItem]) {
+        self.items = items
+    }
+    
     var body: some View {
-        Text(/*@START_MENU_TOKEN@*/"Hello, World!"/*@END_MENU_TOKEN@*/)
+        VStack(alignment: .leading, spacing: 16) {
+            Text("Eingang")
+                .font(.title)
+                .fontWeight(.bold)
+            ScrollView(.vertical, showsIndicators: false) {
+                ForEach(items, id: \.self) { item in
+                    HStack {
+                        Button(action: {
+                            
+                        }, label: {
+                            Image(systemName: "circle")
+                        })
+                        .buttonStyle(.plain)
+                        Text(item.itemTitle)
+                        Spacer()
+                    }
+                    .padding(.horizontal)
+                    .padding(.vertical, 8)
+                }
+            }
+        }
+        .padding()
     }
 }
 
 #Preview {
-    SectionView()
+    SectionView(items: RemindMeItem.getExampleData())
 }
