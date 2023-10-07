@@ -26,6 +26,10 @@
 		303EAFCD2AD1C32C00689795 /* RemindMeItem.swift in Sources */ = {isa = PBXBuildFile; fileRef = 303EAFCB2AD1C32C00689795 /* RemindMeItem.swift */; };
 		30B1854D2AD1D0A0004760F9 /* HomeView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 30B1854C2AD1D0A0004760F9 /* HomeView.swift */; };
 		30B1854E2AD1D0A0004760F9 /* HomeView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 30B1854C2AD1D0A0004760F9 /* HomeView.swift */; };
+		30B185502AD1D52B004760F9 /* SectionView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 30B1854F2AD1D52B004760F9 /* SectionView.swift */; };
+		30B185522AD1D53C004760F9 /* SectionView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 30B185512AD1D53C004760F9 /* SectionView.swift */; };
+		30B185542AD1D56D004760F9 /* Sections.swift in Sources */ = {isa = PBXBuildFile; fileRef = 30B185532AD1D56D004760F9 /* Sections.swift */; };
+		30B185552AD1D56D004760F9 /* Sections.swift in Sources */ = {isa = PBXBuildFile; fileRef = 30B185532AD1D56D004760F9 /* Sections.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -84,6 +88,9 @@
 		303EAFB92AD1C17B00689795 /* RemindMe__iOS_UITestsLaunchTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = RemindMe__iOS_UITestsLaunchTests.swift; sourceTree = "<group>"; };
 		303EAFCB2AD1C32C00689795 /* RemindMeItem.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = RemindMeItem.swift; sourceTree = "<group>"; };
 		30B1854C2AD1D0A0004760F9 /* HomeView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = HomeView.swift; sourceTree = "<group>"; };
+		30B1854F2AD1D52B004760F9 /* SectionView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SectionView.swift; sourceTree = "<group>"; };
+		30B185512AD1D53C004760F9 /* SectionView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SectionView.swift; sourceTree = "<group>"; };
+		30B185532AD1D56D004760F9 /* Sections.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Sections.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -223,6 +230,7 @@
 		303EAF892AD1C03C00689795 /* Views */ = {
 			isa = PBXGroup;
 			children = (
+				30B1854F2AD1D52B004760F9 /* SectionView.swift */,
 			);
 			path = Views;
 			sourceTree = "<group>";
@@ -230,6 +238,7 @@
 		303EAF8A2AD1C04000689795 /* Views */ = {
 			isa = PBXGroup;
 			children = (
+				30B185512AD1D53C004760F9 /* SectionView.swift */,
 			);
 			path = Views;
 			sourceTree = "<group>";
@@ -326,6 +335,7 @@
 			isa = PBXGroup;
 			children = (
 				303EAFCB2AD1C32C00689795 /* RemindMeItem.swift */,
+				30B185532AD1D56D004760F9 /* Sections.swift */,
 			);
 			path = Models;
 			sourceTree = "<group>";
@@ -559,7 +569,9 @@
 			buildActionMask = 2147483647;
 			files = (
 				303EAFCC2AD1C32C00689795 /* RemindMeItem.swift in Sources */,
+				30B185542AD1D56D004760F9 /* Sections.swift in Sources */,
 				303EAF5F2AD1BD1F00689795 /* Item.swift in Sources */,
+				30B185502AD1D52B004760F9 /* SectionView.swift in Sources */,
 				30B1854D2AD1D0A0004760F9 /* HomeView.swift in Sources */,
 				303EAF5B2AD1BD1F00689795 /* RemindMeApp.swift in Sources */,
 			);
@@ -587,7 +599,9 @@
 			buildActionMask = 2147483647;
 			files = (
 				303EAF9D2AD1C17A00689795 /* ContentView.swift in Sources */,
+				30B185552AD1D56D004760F9 /* Sections.swift in Sources */,
 				303EAFCD2AD1C32C00689795 /* RemindMeItem.swift in Sources */,
+				30B185522AD1D53C004760F9 /* SectionView.swift in Sources */,
 				303EAF9F2AD1C17A00689795 /* Item.swift in Sources */,
 				30B1854E2AD1D0A0004760F9 /* HomeView.swift in Sources */,
 				303EAF9B2AD1C17A00689795 /* RemindMe__iOS_App.swift in Sources */,
