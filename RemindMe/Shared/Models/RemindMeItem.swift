@@ -19,9 +19,8 @@ final class RemindMeItem {
     var itemPriority: RemindMeItemPriority?
     var itemReminder: Date?
     var itemTag: RemindMeItemTag?
-    var itemLocation: CLLocationCoordinate2D?
     
-    init(itemTitle: String, itemDescription: String? = nil, itemDateCreation: Date, itemDateDue: Date? = nil, itemPriority: RemindMeItemPriority? = nil, itemReminder: Date? = nil, itemTag: RemindMeItemTag? = nil, itemLocation: CLLocationCoordinate2D? = nil) {
+    init(itemTitle: String, itemDescription: String? = nil, itemDateCreation: Date, itemDateDue: Date? = nil, itemPriority: RemindMeItemPriority? = nil, itemReminder: Date? = nil, itemTag: RemindMeItemTag? = nil) {
         self.itemTitle = itemTitle
         self.itemDescription = itemDescription
         self.itemDateCreation = itemDateCreation
@@ -29,22 +28,31 @@ final class RemindMeItem {
         self.itemPriority = itemPriority
         self.itemReminder = itemReminder
         self.itemTag = itemTag
-        self.itemLocation = itemLocation
     }
 }
 
-enum RemindMeItemPriority: String {
+@Model
+final class RemindMeItemPriority {
+    var value: ItemPriority
+    
+    init(value: ItemPriority) {
+        self.value = value
+    }
+}
+
+enum ItemPriority: String, Codable {
     case one = "PRIORITY_ONE"
     case two = "PRIORITY_TWO"
     case three = "PRIORITY_THREE"
     case four = "PRIORITY_FOUR"
 }
 
-class RemindMeItemTag {
+@Model
+final class RemindMeItemTag {
     var title: String
-    var color: Color
+    var color: String
     
-    init(title: String, color: Color) {
+    init(title: String, color: String) {
         self.title = title
         self.color = color
     }
