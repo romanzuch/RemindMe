@@ -10,6 +10,7 @@ import SwiftData
 
 struct HomeView: View {
     
+    @StateObject private var viewModel: HomeViewModel = HomeViewModel()
     @Environment(\.modelContext) private var modelContext
     @Query private var items: [RemindMeItem]
     
@@ -18,11 +19,13 @@ struct HomeView: View {
             List {
                 ForEach(Sections.sections, id: \.type) { section in
                     NavigationLink {
-                        Text("Test")
+                        SectionView(items: viewModel.getObjectsInSection(for: items, in: section.type))
                     } label: {
                         HStack {
                             Image(systemName: section.icon)
-                            Text(section.type.rawValue)
+                            Text(NSLocalizedString(section.type.rawValue, comment: ""))
+                            Spacer()
+                            Text("\(viewModel.getObjectsInSectionCount(for: items, in: section.type))")
                         }
                     }
                 }
@@ -48,9 +51,15 @@ struct HomeView: View {
     }
     
     private func addItem() {
+        let newItems: [RemindMeItem] = [
+            RemindMeItem(itemTitle: "Titel"),
+            RemindMeItem(itemTitle: "Heute", itemDateDue: Date(timeIntervalSinceNow: 10.0)),
+            RemindMeItem(itemTitle: "Datum", itemDateDue: Date(timeIntervalSinceNow: 2000.0)),
+            RemindMeItem(itemTitle: "Tag", itemTag: RemindMeItemTag(title: "Test", color: .blue))
+        ]
         withAnimation {
-            let newItem = RemindMeItem(itemTitle: "Test")
-            modelContext.insert(newItem)
+            let newItem = newItems.randomElement()
+            modelContext.insert(newItem!)
         }
     }
 
