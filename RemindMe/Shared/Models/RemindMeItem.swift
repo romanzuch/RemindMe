@@ -12,18 +12,19 @@ import SwiftUI
 
 @Model
 final class RemindMeItem {
+    let uuid: UUID = UUID()
     var itemTitle: String
     var itemDescription: String?
-    var itemDateCreation: Date = Date()
+    var itemDateCreation: Date
     var itemDateDue: Date?
     var itemPriority: RemindMeItemPriority?
     var itemReminder: Date?
     var itemTag: RemindMeItemTag?
     
-    init(itemTitle: String, itemDescription: String? = nil, itemDateCreation: Date, itemDateDue: Date? = nil, itemPriority: RemindMeItemPriority? = nil, itemReminder: Date? = nil, itemTag: RemindMeItemTag? = nil) {
+    init(itemTitle: String, itemDescription: String? = nil, itemDateDue: Date? = nil, itemPriority: RemindMeItemPriority? = nil, itemReminder: Date? = nil, itemTag: RemindMeItemTag? = nil) {
         self.itemTitle = itemTitle
         self.itemDescription = itemDescription
-        self.itemDateCreation = itemDateCreation
+        self.itemDateCreation = Date()
         self.itemDateDue = itemDateDue
         self.itemPriority = itemPriority
         self.itemReminder = itemReminder
