@@ -16,14 +16,16 @@ struct HomeView: View {
     var body: some View {
         NavigationSplitView {
             List {
-                ForEach(items) { item in
+                ForEach(Sections.sections, id: \.type) { section in
                     NavigationLink {
-                        Text("Item at \(item.itemDateCreation, format: Date.FormatStyle(date: .numeric, time: .standard))")
+                        Text("Test")
                     } label: {
-                        Text(item.itemTitle)
+                        HStack {
+                            Image(systemName: section.icon)
+                            Text(section.type.rawValue)
+                        }
                     }
                 }
-                .onDelete(perform: deleteItems)
             }
 #if os(macOS)
             .navigationSplitViewColumnWidth(min: 180, ideal: 200)
