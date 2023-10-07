@@ -8,11 +8,20 @@
 import SwiftUI
 
 struct SectionView: View {
+    
+    var items: [RemindMeItem]
+    
+    init(items: [RemindMeItem]) {
+        self.items = items
+    }
+    
     var body: some View {
-        Text(/*@START_MENU_TOKEN@*/"Hello, World!"/*@END_MENU_TOKEN@*/)
+        List(items) { item in
+            Text(item.itemTitle)
+        }
     }
 }
 
 #Preview {
-    SectionView()
+    SectionView(items: RemindMeItem.getExampleData())
 }
