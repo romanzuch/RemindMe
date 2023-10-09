@@ -8,11 +8,63 @@
 import SwiftUI
 
 struct ItemView: View {
+    
+    @Environment(\.modelContext) private var modelContext
+    @State private var showDetailsButton: Bool = false
+    @State private var isHoveringButton: Bool = false
+    var item: RemindMeItem
+    
+    init(item: RemindMeItem) {
+        self.item = item
+    }
+    
     var body: some View {
-        Text(/*@START_MENU_TOKEN@*/"Hello, World!"/*@END_MENU_TOKEN@*/)
+        HStack(alignment: .top) {
+            VStack {
+                Button(action: {
+                    modelContext.delete(item)
+                }, label: {
+                    Image(systemName: isHoveringButton == true ? "checkmark.circle" : "circle")
+                        .font(.title2)
+                        .colorMultiply(isHoveringButton == true ? .blue : .gray)
+                        .onHover { hover in
+                            isHoveringButton = hover
+                        }
+                })
+                .buttonStyle(.plain)
+            }
+            VStack(alignment: .leading) {
+                HStack {
+                    Text(item.itemTitle)
+                    Spacer()
+                    if showDetailsButton == true {
+                        Button(action: {
+                            
+                        }, label: {
+                            Image(systemName: "info.circle")
+                                .renderingMode(.template)
+                                .colorMultiply(.blue)
+                        })
+                        .buttonStyle(.plain)
+                    }
+                }
+                if (item.itemDescription != nil) {
+                    Text(item.itemDescription!)
+                        .colorMultiply(.gray)
+                }
+            }
+            .padding(.bottom, 8)
+            .overlay(Rectangle().frame(width: nil, height: 1, alignment: .top).foregroundColor(Color.gray.opacity(0.5)), alignment: .bottom)
+            .onHover { over in
+                showDetailsButton = over
+            }
+        }
+        .padding(.horizontal)
+        .padding(.vertical, 8)
     }
 }
 
 #Preview {
-    ItemView()
+    ItemView(item: RemindMeItem.getExampleData()[4])
+        .modelContainer(for: RemindMeItem.self, inMemory: true)
 }
