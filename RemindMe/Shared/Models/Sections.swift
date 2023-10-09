@@ -31,6 +31,7 @@ enum SectionType: String, Identifiable {
     case today = "SECTION_TODAY"
     case soon = "SECTION_SOON"
     case tags = "SECTION_TAGS"
+    case completed = "SECTION_COMPLETED"
     var id: String {
         return UUID().uuidString
     }
@@ -41,6 +42,7 @@ class Sections {
         Section(type: .backlog, icon: "tray"),
         Section(type: .today, icon: "calendar.day.timeline.leading"),
         Section(type: .soon, icon: "calendar"),
-        Section(type: .tags, icon: "tag")
+        Section(type: .tags, icon: "tag"),
+        Section(type: .completed, icon: "checkmark")
     ]
 }
