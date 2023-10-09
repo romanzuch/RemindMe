@@ -7,6 +7,8 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
+		301F0A562AD44D3F00C5F80C /* ItemViewModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = 301F0A552AD44D3F00C5F80C /* ItemViewModel.swift */; };
+		301F0A572AD44D3F00C5F80C /* ItemViewModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = 301F0A552AD44D3F00C5F80C /* ItemViewModel.swift */; };
 		303EAF5B2AD1BD1F00689795 /* RemindMeApp.swift in Sources */ = {isa = PBXBuildFile; fileRef = 303EAF5A2AD1BD1F00689795 /* RemindMeApp.swift */; };
 		303EAF5F2AD1BD1F00689795 /* Item.swift in Sources */ = {isa = PBXBuildFile; fileRef = 303EAF5E2AD1BD1F00689795 /* Item.swift */; };
 		303EAF612AD1BD2000689795 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 303EAF602AD1BD2000689795 /* Assets.xcassets */; };
@@ -72,6 +74,7 @@
 /* End PBXContainerItemProxy section */
 
 /* Begin PBXFileReference section */
+		301F0A552AD44D3F00C5F80C /* ItemViewModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ItemViewModel.swift; sourceTree = "<group>"; };
 		303EAF572AD1BD1F00689795 /* RemindMe.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = RemindMe.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		303EAF5A2AD1BD1F00689795 /* RemindMeApp.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = RemindMeApp.swift; sourceTree = "<group>"; };
 		303EAF5E2AD1BD1F00689795 /* Item.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Item.swift; sourceTree = "<group>"; };
@@ -368,6 +371,7 @@
 			isa = PBXGroup;
 			children = (
 				30B1855A2AD1DB88004760F9 /* HomeViewModel.swift */,
+				301F0A552AD44D3F00C5F80C /* ItemViewModel.swift */,
 			);
 			path = Controller;
 			sourceTree = "<group>";
@@ -606,6 +610,7 @@
 				303EAFCC2AD1C32C00689795 /* RemindMeItem.swift in Sources */,
 				30B185542AD1D56D004760F9 /* Sections.swift in Sources */,
 				303EAF5F2AD1BD1F00689795 /* Item.swift in Sources */,
+				301F0A562AD44D3F00C5F80C /* ItemViewModel.swift in Sources */,
 				30B1855F2AD1E435004760F9 /* DateService.swift in Sources */,
 				30B765A02AD2FB3300AD39D3 /* ItemView.swift in Sources */,
 				30B185502AD1D52B004760F9 /* SectionView.swift in Sources */,
@@ -639,6 +644,7 @@
 				30B185602AD1E435004760F9 /* DateService.swift in Sources */,
 				303EAF9D2AD1C17A00689795 /* ContentView.swift in Sources */,
 				30B185552AD1D56D004760F9 /* Sections.swift in Sources */,
+				301F0A572AD44D3F00C5F80C /* ItemViewModel.swift in Sources */,
 				30B765A12AD2FB3300AD39D3 /* ItemView.swift in Sources */,
 				303EAFCD2AD1C32C00689795 /* RemindMeItem.swift in Sources */,
 				30B1855C2AD1DB88004760F9 /* HomeViewModel.swift in Sources */,
