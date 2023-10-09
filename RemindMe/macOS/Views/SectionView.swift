@@ -9,6 +9,7 @@ import SwiftUI
 
 struct SectionView: View {
     
+    @Environment(\.modelContext) private var modelContext
     var items: [RemindMeItem]
     
     init(items: [RemindMeItem]) {
@@ -17,23 +18,15 @@ struct SectionView: View {
     
     var body: some View {
         VStack(alignment: .leading, spacing: 16) {
-            Text("Eingang")
-                .font(.title)
-                .fontWeight(.bold)
+            HStack {
+                Text("Eingang")
+                    .font(.title)
+                    .fontWeight(.bold)
+                Spacer()
+            }
             ScrollView(.vertical, showsIndicators: false) {
                 ForEach(items, id: \.self) { item in
-                    HStack {
-                        Button(action: {
-                            
-                        }, label: {
-                            Image(systemName: "circle")
-                        })
-                        .buttonStyle(.plain)
-                        Text(item.itemTitle)
-                        Spacer()
-                    }
-                    .padding(.horizontal)
-                    .padding(.vertical, 8)
+                    ItemView(item: item)
                 }
             }
         }
@@ -43,4 +36,5 @@ struct SectionView: View {
 
 #Preview {
     SectionView(items: RemindMeItem.getExampleData())
+        .modelContainer(for: RemindMeItem.self, inMemory: true)
 }
