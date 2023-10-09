@@ -19,7 +19,8 @@ struct HomeView: View {
             List {
                 ForEach(Sections.sections, id: \.type) { section in
                     NavigationLink {
-                        SectionView(items: viewModel.getObjectsInSection(for: items, in: section.type))
+                        SectionView(items: viewModel.getObjectsInSection(for: items, in: section.type)
+                        )
                     } label: {
                         HStack {
                             Image(systemName: section.icon)
@@ -51,14 +52,8 @@ struct HomeView: View {
     }
     
     private func addItem() {
-        let newItems: [RemindMeItem] = [
-            RemindMeItem(itemTitle: "Titel"),
-            RemindMeItem(itemTitle: "Heute", itemDateDue: Date(timeIntervalSinceNow: 10.0)),
-            RemindMeItem(itemTitle: "Datum", itemDateDue: Date(timeIntervalSinceNow: 2000.0)),
-            RemindMeItem(itemTitle: "Tag", itemTag: RemindMeItemTag(title: "Test", color: .blue))
-        ]
         withAnimation {
-            let newItem = newItems.randomElement()
+            let newItem = RemindMeItem.getExampleData().randomElement()
             modelContext.insert(newItem!)
         }
     }
