@@ -36,6 +36,8 @@
 		30B1855C2AD1DB88004760F9 /* HomeViewModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = 30B1855A2AD1DB88004760F9 /* HomeViewModel.swift */; };
 		30B1855F2AD1E435004760F9 /* DateService.swift in Sources */ = {isa = PBXBuildFile; fileRef = 30B1855E2AD1E435004760F9 /* DateService.swift */; };
 		30B185602AD1E435004760F9 /* DateService.swift in Sources */ = {isa = PBXBuildFile; fileRef = 30B1855E2AD1E435004760F9 /* DateService.swift */; };
+		30B765A02AD2FB3300AD39D3 /* ItemView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 30B7659F2AD2FB3300AD39D3 /* ItemView.swift */; };
+		30B765A12AD2FB3300AD39D3 /* ItemView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 30B7659F2AD2FB3300AD39D3 /* ItemView.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -100,6 +102,7 @@
 		30B185562AD1DA21004760F9 /* Localizable.xcstrings */ = {isa = PBXFileReference; lastKnownFileType = text.json.xcstrings; path = Localizable.xcstrings; sourceTree = "<group>"; };
 		30B1855A2AD1DB88004760F9 /* HomeViewModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = HomeViewModel.swift; sourceTree = "<group>"; };
 		30B1855E2AD1E435004760F9 /* DateService.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = DateService.swift; sourceTree = "<group>"; };
+		30B7659F2AD2FB3300AD39D3 /* ItemView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ItemView.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -356,6 +359,7 @@
 			isa = PBXGroup;
 			children = (
 				30B1854C2AD1D0A0004760F9 /* HomeView.swift */,
+				30B7659F2AD2FB3300AD39D3 /* ItemView.swift */,
 			);
 			path = Views;
 			sourceTree = "<group>";
@@ -603,6 +607,7 @@
 				30B185542AD1D56D004760F9 /* Sections.swift in Sources */,
 				303EAF5F2AD1BD1F00689795 /* Item.swift in Sources */,
 				30B1855F2AD1E435004760F9 /* DateService.swift in Sources */,
+				30B765A02AD2FB3300AD39D3 /* ItemView.swift in Sources */,
 				30B185502AD1D52B004760F9 /* SectionView.swift in Sources */,
 				30B1854D2AD1D0A0004760F9 /* HomeView.swift in Sources */,
 				30B1855B2AD1DB88004760F9 /* HomeViewModel.swift in Sources */,
@@ -634,6 +639,7 @@
 				30B185602AD1E435004760F9 /* DateService.swift in Sources */,
 				303EAF9D2AD1C17A00689795 /* ContentView.swift in Sources */,
 				30B185552AD1D56D004760F9 /* Sections.swift in Sources */,
+				30B765A12AD2FB3300AD39D3 /* ItemView.swift in Sources */,
 				303EAFCD2AD1C32C00689795 /* RemindMeItem.swift in Sources */,
 				30B1855C2AD1DB88004760F9 /* HomeViewModel.swift in Sources */,
 				30B185522AD1D53C004760F9 /* SectionView.swift in Sources */,
