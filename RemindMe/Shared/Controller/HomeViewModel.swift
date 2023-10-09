@@ -17,7 +17,13 @@ class HomeViewModel: ObservableObject {
         let dateFormatter: DateFormatter = DateService.getDateFormatter()
         switch section {
         case .backlog:
-            return data
+            let uncompletedData = data.compactMap { item in
+                if item.itemIsCompleted == nil || item.itemIsCompleted == false {
+                    return item
+                }
+                return nil
+            }
+            return uncompletedData
         case .today:
             let todayItems = data.compactMap { item in
                 if let dueDate = item.itemDateDue {
@@ -54,6 +60,12 @@ class HomeViewModel: ObservableObject {
                 }
             }
             return tagsItems
+        case .completed:
+            let completedItems = data.compactMap { item in
+                if item.itemIsCompleted == true { return item }
+                return nil
+            }
+            return completedItems
         }
     }
 }
