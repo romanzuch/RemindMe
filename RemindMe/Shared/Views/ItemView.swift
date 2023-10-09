@@ -9,6 +9,7 @@ import SwiftUI
 
 struct ItemView: View {
     
+    @State private var viewModel: ItemViewModel = ItemViewModel()
     @Environment(\.modelContext) private var modelContext
     @State private var showDetailsButton: Bool = false
     @State private var isHoveringButton: Bool = false
@@ -22,7 +23,11 @@ struct ItemView: View {
         HStack(alignment: .top) {
             VStack {
                 Button(action: {
-                    modelContext.delete(item)
+                    if let completed = item.itemIsCompleted {
+                        item.itemIsCompleted = !completed
+                    } else {
+                        item.itemIsCompleted = true
+                    }
                 }, label: {
                     Image(systemName: isHoveringButton == true ? "checkmark.circle" : "circle")
                         .font(.title2)
