@@ -36,7 +36,8 @@ final class RemindMeItem {
             RemindMeItem(itemTitle: "Titel"),
             RemindMeItem(itemTitle: "Heute", itemDateDue: Date(timeIntervalSinceNow: 10.0)),
             RemindMeItem(itemTitle: "Datum", itemDateDue: Date(timeIntervalSinceNow: 2000.0)),
-            RemindMeItem(itemTitle: "Tag", itemTag: RemindMeItemTag(title: "Test", color: .blue))
+            RemindMeItem(itemTitle: "Tag", itemTag: RemindMeItemTag(title: "Test", color: .blue)),
+            RemindMeItem(itemTitle: "Beschreibung", itemDescription: "Das ist eine Beschreibung.")
         ]
         return exampleData
     }
