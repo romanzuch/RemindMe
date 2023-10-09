@@ -20,8 +20,9 @@ final class RemindMeItem {
     var itemPriority: RemindMeItemPriority?
     var itemReminder: Date?
     var itemTag: RemindMeItemTag?
+    var itemIsCompleted: Bool?
     
-    init(itemTitle: String, itemDescription: String? = nil, itemDateDue: Date? = nil, itemPriority: RemindMeItemPriority? = nil, itemReminder: Date? = nil, itemTag: RemindMeItemTag? = nil) {
+    init(itemTitle: String, itemDescription: String? = nil, itemDateDue: Date? = nil, itemPriority: RemindMeItemPriority? = nil, itemReminder: Date? = nil, itemTag: RemindMeItemTag? = nil, itemIsCompleted: Bool = false) {
         self.itemTitle = itemTitle
         self.itemDescription = itemDescription
         self.itemDateCreation = Date()
@@ -29,6 +30,7 @@ final class RemindMeItem {
         self.itemPriority = itemPriority
         self.itemReminder = itemReminder
         self.itemTag = itemTag
+        self.itemIsCompleted = itemIsCompleted
     }
     
     static func getExampleData() -> [RemindMeItem] {
@@ -37,7 +39,8 @@ final class RemindMeItem {
             RemindMeItem(itemTitle: "Heute", itemDateDue: Date(timeIntervalSinceNow: 10.0)),
             RemindMeItem(itemTitle: "Datum", itemDateDue: Date(timeIntervalSinceNow: 2000.0)),
             RemindMeItem(itemTitle: "Tag", itemTag: RemindMeItemTag(title: "Test", color: .blue)),
-            RemindMeItem(itemTitle: "Beschreibung", itemDescription: "Das ist eine Beschreibung.")
+            RemindMeItem(itemTitle: "Beschreibung", itemDescription: "Das ist eine Beschreibung."),
+            RemindMeItem(itemTitle: "Erledigt", itemIsCompleted: true)
         ]
         return exampleData
     }
