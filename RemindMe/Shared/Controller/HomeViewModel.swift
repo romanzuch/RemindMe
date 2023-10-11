@@ -26,38 +26,47 @@ class HomeViewModel: ObservableObject {
             return uncompletedData
         case .today:
             let todayItems = data.compactMap { item in
-                if let dueDate = item.itemDateDue {
-                    let formattedDate: String = dateFormatter.string(from: dueDate)
-                    if formattedDate == dateFormatter.string(from: Date()) {
-                        return item
+                if item.itemIsCompleted == nil || item.itemIsCompleted == false {
+                    if let dueDate = item.itemDateDue {
+                        let formattedDate: String = dateFormatter.string(from: dueDate)
+                        if formattedDate == dateFormatter.string(from: Date()) {
+                            return item
+                        } else {
+                            return nil
+                        }
                     } else {
                         return nil
                     }
-                } else {
-                    return nil
                 }
+                return nil
             }
             return todayItems
         case .soon:
             let soonItems = data.compactMap { item in
-                if let dueDate = item.itemDateDue {
-                    if (DateService.isDateTomorrow(dueDate)) {
-                        return item
+                if item.itemIsCompleted == nil || item.itemIsCompleted == false {
+                    if let dueDate = item.itemDateDue {
+                        if (DateService.isDateTomorrow(dueDate)) {
+                            return item
+                        } else {
+                            return nil
+                        }
                     } else {
                         return nil
                     }
-                } else {
-                    return nil
                 }
+                return nil
             }
             return soonItems
         case .tags:
             let tagsItems = data.compactMap { item in
-                if let tag = item.itemTag {
-                    return item
-                } else {
-                    return nil
+                if item.itemIsCompleted == nil || item.itemIsCompleted == false {
+                    if let tag = item.itemTag {
+                        return item
+                    } else {
+                        return nil
+                    }
                 }
+                return nil
             }
             return tagsItems
         case .completed:
