@@ -12,8 +12,12 @@ struct SectionView: View {
     @Environment(\.modelContext) private var modelContext
     var items: [RemindMeItem]
     
-    init(items: [RemindMeItem]) {
+    // MARK: - Add Items Feature
+    @Binding private var showAddItem: Bool
+    
+    init(items: [RemindMeItem], showAddItem: Binding<Bool>) {
         self.items = items
+        self._showAddItem = showAddItem
     }
     
     var body: some View {
@@ -25,6 +29,9 @@ struct SectionView: View {
                 Spacer()
             }
             ScrollView(.vertical, showsIndicators: false) {
+                if self.showAddItem {
+                    AddItemView(showAddItem: self.$showAddItem)
+                }
                 ForEach(items, id: \.self) { item in
                     ItemView(item: item)
                 }
@@ -35,6 +42,9 @@ struct SectionView: View {
 }
 
 #Preview {
-    SectionView(items: RemindMeItem.getExampleData())
+    SectionView(
+        items: RemindMeItem.getExampleData(),
+        showAddItem: .constant(true)
+    )
         .modelContainer(for: RemindMeItem.self, inMemory: true)
 }
