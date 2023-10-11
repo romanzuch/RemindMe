@@ -8,11 +8,101 @@
 import SwiftUI
 
 struct AddItemView: View {
+    
+    @Environment(\.modelContext) private var modelContext
+    @State private var newItemText: String = ""
+    @State private var newItemDate: Date? = nil
+    @State private var hoverAddDateMenu: Bool = false
+    @State private var hoverAddLocationMenu: Bool = false
+    @Binding private var showAddItem: Bool
+    
+    init(showAddItem: Binding<Bool>) {
+        self._showAddItem = showAddItem
+    }
+    
     var body: some View {
-        Text(/*@START_MENU_TOKEN@*/"Hello, World!"/*@END_MENU_TOKEN@*/)
+        VStack {
+            TextField(text: self.$newItemText) {
+                Text("")
+            }
+            .textFieldStyle(.plain)
+            HStack {
+                if newItemDate == nil {
+                    addDateMenu
+                } else {
+                    selectedDateButton
+                }
+                Spacer()
+            }
+        }
+        .padding(.bottom, 8)
+        .overlay(Rectangle().frame(width: nil, height: 1, alignment: .top).foregroundColor(Color.gray.opacity(0.5)), alignment: .bottom)
+        .onSubmit {
+            let newReminderItem: RemindMeItem = RemindMeItem(itemTitle: self.newItemText, itemDateDue: self.newItemDate)
+            self.modelContext.insert(newReminderItem)
+            self.showAddItem = false
+        }
+    }
+    
+    var selectedDateButton: some View {
+        Text(self.newItemDate ?? Date(), style: .date)
+    }
+    
+    var addDateMenu: some View {
+        Menu {
+            VStack {
+                Text("Vorschläge")
+                    .font(.caption)
+                Button(action: {
+                    self.newItemDate = Date()
+                }, label: {
+                    HStack {
+                        Image(systemName: "calendar")
+                        Text("Heute")
+                    }
+                })
+                Button(action: {
+                    if let nextDay = Calendar.current.date(byAdding: .day, value: 1, to: Date()) {
+                        self.newItemDate = nextDay
+                    }
+                }, label: {
+                    HStack {
+                        Image(systemName: "calendar")
+                        Text("Morgen")
+                    }
+                })
+                Button(action: {
+                    let calendar: Calendar = Calendar.current
+                    let currentDayOfWeek = calendar.component(.weekday, from: Date())
+                    let daysUntilSaturday = 6 - currentDayOfWeek
+                    if let weekend = calendar.date(byAdding: .day, value: daysUntilSaturday, to: Date()) {
+                        self.newItemDate = weekend
+                    }
+                }, label: {
+                    HStack {
+                        Image(systemName: "calendar")
+                        Text("Wochenende")
+                    }
+                })
+            }
+        } label: {
+            Label("ADD_DATE", systemImage: "calendar")
+        }
+        .menuStyle(.borderlessButton)
+        .menuIndicator(.hidden)
+        .padding(.vertical, 4)
+        .padding(.horizontal, 12)
+        .background {
+            RoundedRectangle(cornerRadius: 8)
+                .fill(.white.opacity(0.1))
+        }
+        .fixedSize()
+        .onHover(perform: { hovering in
+            self.hoverAddDateMenu = hovering
+        })
     }
 }
 
 #Preview {
-    AddItemView()
+    AddItemView(showAddItem: .constant(true))
 }
