@@ -1,6 +1,9 @@
 {
   "sourceLanguage" : "en",
   "strings" : {
+    "" : {
+
+    },
     "%@" : {
 
     },
@@ -23,6 +26,9 @@
         }
       }
     },
+    "ADD_DATE" : {
+
+    },
     "Eingang" : {
       "localizations" : {
         "de" : {
@@ -38,6 +44,12 @@
           }
         }
       }
+    },
+    "Heute" : {
+
+    },
+    "Morgen" : {
+
     },
     "SECTION_BACKLOG" : {
       "extractionState" : "manual",
@@ -133,6 +145,12 @@
           }
         }
       }
+    },
+    "Vorschläge" : {
+
+    },
+    "Wochenende" : {
+
     }
   },
   "version" : "1.0"
