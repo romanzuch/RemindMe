@@ -26,8 +26,8 @@
 		303EAFBA2AD1C17B00689795 /* RemindMe__iOS_UITestsLaunchTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 303EAFB92AD1C17B00689795 /* RemindMe__iOS_UITestsLaunchTests.swift */; };
 		303EAFCC2AD1C32C00689795 /* RemindMeItem.swift in Sources */ = {isa = PBXBuildFile; fileRef = 303EAFCB2AD1C32C00689795 /* RemindMeItem.swift */; };
 		303EAFCD2AD1C32C00689795 /* RemindMeItem.swift in Sources */ = {isa = PBXBuildFile; fileRef = 303EAFCB2AD1C32C00689795 /* RemindMeItem.swift */; };
-		30B1854D2AD1D0A0004760F9 /* HomeView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 30B1854C2AD1D0A0004760F9 /* HomeView.swift */; };
-		30B1854E2AD1D0A0004760F9 /* HomeView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 30B1854C2AD1D0A0004760F9 /* HomeView.swift */; };
+		306A93242AD700C5002E9236 /* HomeView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 306A93232AD700C5002E9236 /* HomeView.swift */; };
+		306A93262AD700CD002E9236 /* HomeView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 306A93252AD700CD002E9236 /* HomeView.swift */; };
 		30B185502AD1D52B004760F9 /* SectionView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 30B1854F2AD1D52B004760F9 /* SectionView.swift */; };
 		30B185522AD1D53C004760F9 /* SectionView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 30B185512AD1D53C004760F9 /* SectionView.swift */; };
 		30B185542AD1D56D004760F9 /* Sections.swift in Sources */ = {isa = PBXBuildFile; fileRef = 30B185532AD1D56D004760F9 /* Sections.swift */; };
@@ -98,7 +98,8 @@
 		303EAFB72AD1C17B00689795 /* RemindMe__iOS_UITests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = RemindMe__iOS_UITests.swift; sourceTree = "<group>"; };
 		303EAFB92AD1C17B00689795 /* RemindMe__iOS_UITestsLaunchTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = RemindMe__iOS_UITestsLaunchTests.swift; sourceTree = "<group>"; };
 		303EAFCB2AD1C32C00689795 /* RemindMeItem.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = RemindMeItem.swift; sourceTree = "<group>"; };
-		30B1854C2AD1D0A0004760F9 /* HomeView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = HomeView.swift; sourceTree = "<group>"; };
+		306A93232AD700C5002E9236 /* HomeView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = HomeView.swift; sourceTree = "<group>"; };
+		306A93252AD700CD002E9236 /* HomeView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = HomeView.swift; sourceTree = "<group>"; };
 		30B1854F2AD1D52B004760F9 /* SectionView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SectionView.swift; sourceTree = "<group>"; };
 		30B185512AD1D53C004760F9 /* SectionView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SectionView.swift; sourceTree = "<group>"; };
 		30B185532AD1D56D004760F9 /* Sections.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Sections.swift; sourceTree = "<group>"; };
@@ -247,6 +248,7 @@
 			isa = PBXGroup;
 			children = (
 				30B1854F2AD1D52B004760F9 /* SectionView.swift */,
+				306A93252AD700CD002E9236 /* HomeView.swift */,
 			);
 			path = Views;
 			sourceTree = "<group>";
@@ -255,6 +257,7 @@
 			isa = PBXGroup;
 			children = (
 				30B185512AD1D53C004760F9 /* SectionView.swift */,
+				306A93232AD700C5002E9236 /* HomeView.swift */,
 			);
 			path = Views;
 			sourceTree = "<group>";
@@ -361,7 +364,6 @@
 		30B1854B2AD1D08F004760F9 /* Views */ = {
 			isa = PBXGroup;
 			children = (
-				30B1854C2AD1D0A0004760F9 /* HomeView.swift */,
 				30B7659F2AD2FB3300AD39D3 /* ItemView.swift */,
 			);
 			path = Views;
@@ -612,9 +614,9 @@
 				303EAF5F2AD1BD1F00689795 /* Item.swift in Sources */,
 				301F0A562AD44D3F00C5F80C /* ItemViewModel.swift in Sources */,
 				30B1855F2AD1E435004760F9 /* DateService.swift in Sources */,
+				306A93262AD700CD002E9236 /* HomeView.swift in Sources */,
 				30B765A02AD2FB3300AD39D3 /* ItemView.swift in Sources */,
 				30B185502AD1D52B004760F9 /* SectionView.swift in Sources */,
-				30B1854D2AD1D0A0004760F9 /* HomeView.swift in Sources */,
 				30B1855B2AD1DB88004760F9 /* HomeViewModel.swift in Sources */,
 				303EAF5B2AD1BD1F00689795 /* RemindMeApp.swift in Sources */,
 			);
@@ -650,7 +652,7 @@
 				30B1855C2AD1DB88004760F9 /* HomeViewModel.swift in Sources */,
 				30B185522AD1D53C004760F9 /* SectionView.swift in Sources */,
 				303EAF9F2AD1C17A00689795 /* Item.swift in Sources */,
-				30B1854E2AD1D0A0004760F9 /* HomeView.swift in Sources */,
+				306A93242AD700C5002E9236 /* HomeView.swift in Sources */,
 				303EAF9B2AD1C17A00689795 /* RemindMe__iOS_App.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
