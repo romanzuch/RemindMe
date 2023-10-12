@@ -26,6 +26,9 @@ struct AddItemView: View {
                 Text("")
             }
             .textFieldStyle(.plain)
+            .onExitCommand(perform: {
+                self.showAddItem = false
+            })
             HStack {
                 if newItemDate == nil {
                     addDateMenu
@@ -35,6 +38,7 @@ struct AddItemView: View {
                 Spacer()
             }
         }
+        .padding(.leading, 32)
         .padding(.bottom, 8)
         .overlay(Rectangle().frame(width: nil, height: 1, alignment: .top).foregroundColor(Color.gray.opacity(0.5)), alignment: .bottom)
         .onSubmit {
@@ -45,7 +49,27 @@ struct AddItemView: View {
     }
     
     var selectedDateButton: some View {
-        Text(self.newItemDate ?? Date(), style: .date)
+        Button(action: {
+            self.newItemDate = nil
+        }, label: {
+            HStack {
+                Text(self.newItemDate ?? Date(), style: .date)
+                Image(systemName: "xmark")
+                    .renderingMode(.template)
+                    .colorMultiply(hoverAddDateMenu == true ? Color.red : Color.white)
+            }
+        })
+            .buttonStyle(.plain)
+            .padding(.vertical, 4)
+            .padding(.horizontal, 12)
+            .background {
+                RoundedRectangle(cornerRadius: 8)
+                    .fill(.white.opacity(0.1))
+            }
+            .fixedSize()
+            .onHover(perform: { hovering in
+                hoverAddDateMenu = hovering
+            })
     }
     
     var addDateMenu: some View {
