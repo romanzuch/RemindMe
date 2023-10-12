@@ -22,7 +22,7 @@ struct HomeView: View {
             List {
                 ForEach(Sections.sections, id: \.type) { section in
                     NavigationLink {
-                        SectionView(items: viewModel.getObjectsInSection(for: items, in: section.type)
+                        SectionView(title: section.type.rawValue, items: viewModel.getObjectsInSection(for: items, in: section.type)
                         )
                     } label: {
                         HStack {
@@ -38,9 +38,17 @@ struct HomeView: View {
                 ToolbarItem(placement: .navigationBarTrailing) {
                     EditButton()
                 }
-                ToolbarItem {
-                    Button(action: addItem) {
-                        Label("Add Item", systemImage: "plus")
+                ToolbarItem(placement: .bottomBar) {
+                    HStack {
+                        Button(action: addItem) {
+                            HStack {
+                                Image(systemName: "plus")
+                                    .fontWeight(.bold)
+                                Text("Hinzufügen")
+                            }
+                            .font(.title2)
+                        }
+                        Spacer()
                     }
                 }
             }
