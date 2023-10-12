@@ -79,6 +79,9 @@
         }
       }
     },
+    "Hallo" : {
+
+    },
     "Heute" : {
       "localizations" : {
         "de" : {
@@ -94,6 +97,12 @@
           }
         }
       }
+    },
+    "Hinzufügen" : {
+
+    },
+    "Item at %@" : {
+
     },
     "Morgen" : {
       "localizations" : {
