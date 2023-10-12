@@ -98,7 +98,7 @@ struct AddItemView: View {
                 Button(action: {
                     let calendar: Calendar = Calendar.current
                     let currentDayOfWeek = calendar.component(.weekday, from: Date())
-                    let daysUntilSaturday = 6 - currentDayOfWeek
+                    let daysUntilSaturday = 7 - currentDayOfWeek
                     if let weekend = calendar.date(byAdding: .day, value: daysUntilSaturday, to: Date()) {
                         self.newItemDate = weekend
                     }
