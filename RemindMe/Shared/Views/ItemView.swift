@@ -38,6 +38,7 @@ struct ItemView: View {
                 })
                 .buttonStyle(.plain)
             }
+            .frame(width: 32)
             VStack(alignment: .leading) {
                 HStack {
                     Text(item.itemTitle)
