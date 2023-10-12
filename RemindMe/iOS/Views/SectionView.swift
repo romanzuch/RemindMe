@@ -9,19 +9,35 @@ import SwiftUI
 
 struct SectionView: View {
     
+    @Environment(\.modelContext) private var modelContext
     var items: [RemindMeItem]
+    var title: String
     
-    init(items: [RemindMeItem]) {
+    init(title: String, items: [RemindMeItem]) {
+        self.title = title
         self.items = items
     }
     
     var body: some View {
-        List(items) { item in
-            Text(item.itemTitle)
+        VStack(alignment: .leading, spacing: 16) {
+            HStack {
+                Text(NSLocalizedString(title, comment: ""))
+                    .font(.title)
+                    .fontWeight(.bold)
+                    .padding(.horizontal)
+                Spacer()
+            }
+            ScrollView {
+                ForEach(items, id: \.hashValue) { item in
+                    ItemView(item: item)
+                }
+                AddItemView()
+            }
         }
     }
 }
 
 #Preview {
-    SectionView(items: RemindMeItem.getExampleData())
+    SectionView(title: "Eingang", items: RemindMeItem.getExampleData())
+        .modelContainer(for: RemindMeItem.self, inMemory: true)
 }
