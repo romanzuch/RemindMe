@@ -60,7 +60,7 @@ class HomeViewModel: ObservableObject {
         case .tags:
             let tagsItems = data.compactMap { item in
                 if item.itemIsCompleted == nil || item.itemIsCompleted == false {
-                    if let tag = item.itemTag {
+                    if item.itemTag != nil {
                         return item
                     } else {
                         return nil
